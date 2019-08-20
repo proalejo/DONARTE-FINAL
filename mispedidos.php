@@ -17,11 +17,15 @@ include("nav.php")
 
                     $pedidos = buscarPedidosUsuario($_SESSION["id_usuario"]); 
 
-                    while ($pedi = $pedidos->fetch_assoc()){
 
-                      crearHTMLpedidosUsuario( $pedi["id"], $pedi["producto"], $pedi["descripcion"], $pedi["img"]);
+
+                    if ($pedidos){
+                        foreach ($pedidos as $pedido) {
+
+                            crearHTMLpedidosUsuario($pedido['producto'], $pedido['descripcion'] . "...", $pedido['img'], $pedido['nombre_usuario']);  
 
                     }
+                  }
                     ?>
 
 
@@ -29,10 +33,6 @@ include("nav.php")
   </div>
 </div>
 
-
-
-
-  
     <?php
       include("footer.php")
       ?>

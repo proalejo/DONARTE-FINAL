@@ -315,20 +315,27 @@ function crearHTMLcardProdu($id, $producto, $descripcion, $img, $id_usuario){
  <?php
 
  
-function crearHTMLpedidosUsuario($id, $producto, $descripcion, $img){
+function crearHTMLpedidosUsuario($producto, $descripcion,$img, $nombre_usuario){
 
 ?>  
     <div class="col-md-4">
-                          <img alt="producto" id="prod_image" style="max-height: 200px; max-width: 200px;" src="<?= PATH_FILE . '/' .  $img  ?>" />
-                              <dl class="mt-5">
-                                <dt>
-                                  <?= $producto ?>
-                                </dt>           
+
+
+             <img alt="producto" id="prod_image" style="max-height: 200px; max-width: 200px;" src="<?= PATH_FILE . '/' .  $img  ?>" />
+                 <dl class="mt-5">
+                    <dt>
+                       <?= $producto ?>
+                     </dt>           
                                 
-                                <dd class="mt-5">
-                                  <?= $descripcion ?>
-                                </dd>
-                              </dl> 
+                    <dd class="mt-5">
+                                    <?= $descripcion ?>
+                      </dd>
+
+                      <dd class="mt-5">
+                            
+                            <?php echo   "<b>Donante: " . $nombre_usuario; "</b>" ?>          
+                      </dd> 
+              </dl> 
                                                     
     </div>
 
