@@ -333,7 +333,7 @@ function crearHTMLpedidosUsuario($producto, $descripcion,$img, $nombre_usuario){
 
                       <dd class="mt-5">
                             
-                            <?php echo   "<b>Donante: " . $nombre_usuario; "</b>" ?>          
+                            <?php echo   "<b>Donante: </b>" . $nombre_usuario; ?>          
                       </dd> 
               </dl> 
                                                     

@@ -2,8 +2,8 @@
 include("nav.php")
 ?>   
 <div class="container-fluid m-5">
-      <div class="container-fluid">
-        <div class="row">
+  <div class="container-fluid">
+                   <div class="row">
 
 
 <?php  
