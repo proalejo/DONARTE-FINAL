@@ -1,6 +1,6 @@
  <?php
 
-function crearHTMLpublicacionalimento($id, $producto, $descripcion, $img){
+function crearHTMLpublicacionalimento($id, $producto, $descripcion, $img, $id_usuario){
 
 ?>	
 		<div class="col-md-4">     
@@ -31,7 +31,8 @@ function crearHTMLpublicacionalimento($id, $producto, $descripcion, $img){
                                 ?>
 
                                 <form action="lonecesito.php" method="GET">
-                                <input type="hidden" name="id_publicacion" value="<?= $id ?>">                                
+                                <input type="hidden" name="id_publicacion" value="<?= $id ?>">          
+                                <input type="hidden" name="id_usuario" value="<?= $id_usuario ?>">                          
                                 <input type="submit" name="submit" class="btn btn-success" value="Lo Necesito">
 
                                 <div class="col-md-4 mt-5">
@@ -62,7 +63,7 @@ function crearHTMLpublicacionalimento($id, $producto, $descripcion, $img){
 
  <?php
 
-function crearHTMLpublicacionmueble($id, $producto, $descripcion, $img){
+function crearHTMLpublicacionmueble($id, $producto, $descripcion, $img, $id_usuario){
 
 ?>  
     <div class="col-md-4">     
@@ -93,7 +94,8 @@ function crearHTMLpublicacionmueble($id, $producto, $descripcion, $img){
                                 ?>
 
                                 <form action="lonecesito.php" method="GET">
-                                <input type="hidden" name="id_publicacion" value="<?= $id ?>">                                
+                                <input type="hidden" name="id_publicacion" value="<?= $id ?>">    
+                                <input type="hidden" name="id_usuario" value="<?= $id_usuario ?>">                             
                                 <input type="submit" name="submit" class="btn btn-success" value="Lo Necesito">
 
                                 <div class="col-md-4 mt-5">
@@ -124,7 +126,7 @@ function crearHTMLpublicacionmueble($id, $producto, $descripcion, $img){
 
  <?php
 
-function crearHTMLpublicacionropa($id, $producto, $descripcion, $img){
+function crearHTMLpublicacionropa($id, $producto, $descripcion, $img, $id_usuario){
 
 ?>  
     <div class="col-md-4">     
@@ -155,7 +157,8 @@ function crearHTMLpublicacionropa($id, $producto, $descripcion, $img){
                                 ?>
 
                                 <form action="lonecesito.php" method="GET">
-                                <input type="hidden" name="id_publicacion" value="<?= $id ?>">                                
+                                <input type="hidden" name="id_publicacion" value="<?= $id ?>">
+                                <input type="hidden" name="id_usuario" value="<?= $id_usuario ?>">                                 
                                 <input type="submit" name="submit" class="btn btn-success" value="Lo Necesito">
 
                                 <div class="col-md-4 mt-5">
@@ -252,7 +255,7 @@ function crearHTMLpublicacionUsuario( $id, $producto, $descripcion, $img ){
       <?php  }  ?>
 <?php
 
-function crearHTMLcardProdu($id, $producto, $descripcion, $img){
+function crearHTMLcardProdu($id, $producto, $descripcion, $img, $id_usuario){
 
 ?>  
     <div class="col-md-4">
@@ -280,7 +283,8 @@ function crearHTMLcardProdu($id, $producto, $descripcion, $img){
                                 ?>
 
                                 <form action="lonecesito.php" method="GET">
-                                <input type="hidden" name="id_publicacion" value="<?= $id ?>">                                
+                                <input type="hidden" name="id_publicacion" value="<?= $id ?>">   
+                                <input type="hidden" name="id_usuario" value="<?= $id_usuario ?>">                              
                                 <input type="submit" name="submit" class="btn btn-success" value="Lo Necesito">
 
                                 <div class="col-md-4 mt-5">
