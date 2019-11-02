@@ -43,6 +43,7 @@
 			include("nav.php");
 			?>
 
+<!-- Formulario De Registro -->
 
 <div class="container mt-5 mb-5">
 		<div class="row mt-3">

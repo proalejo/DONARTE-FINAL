@@ -1,6 +1,9 @@
 <?php
 include("nav.php")
 ?>
+      
+      <!-- Seccion Nosotros -->
+
       <div class="row mb-5">
             <div class="col-md-12">                
                 <h1 id="nosotros">Nosotros</h1>

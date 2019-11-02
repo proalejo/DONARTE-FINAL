@@ -13,14 +13,6 @@ include("nav.php")
 
     include_once PATH_HELPERS . "/database_helper.php";
   
-    //$conexion = getConexion();
-
-      //  $sql = "SELECT id_usuario FROM 'publicaciones' WHERE  'id =  $id_publicacion'"
-
-        //  $id_usuario = $conexion->query($sql);
-
-          //        return $id_usuario;
-
 
                                       if (isset($_GET["id_usuario"])) {
                                         $id_usuario = $_SESSION["id_usuario"];

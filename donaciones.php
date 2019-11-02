@@ -1,6 +1,8 @@
 <?php
 include("nav.php")
 ?>
+
+<!-- Pagina Seccion Donaciones -->
       
 <div class="container-fluid mt-5 mb-5">
   <div class="row">

@@ -14,10 +14,7 @@ include("nav.php")
     $conexion = getConexion();
 
     $consulta = "SELECT * FROM `publicaciones` WHERE producto LIKE '%". $busqueda ."%'";
-    //"SELECT * 
-                //FROM publicaciones 
-                //WHERE producto LIKE '% ". $busqueda . "%' ";
-
+   
     
     $resultado = $conexion->query($consulta);
 
